@@ -1,0 +1,33 @@
+<html>
+	<head>
+	<title>Color App</title>
+	<style>
+		*{font-size:5vw;}
+		h1{border:solid;border-radius:3vw;width:70%;}
+	
+	</style>
+	</head>
+	<body>
+	<center>
+	<h1>COLOR APP</h1>
+	<form onsubmit="show()">
+		<input type="submit" value="Red">
+		<input type="submit" value="Green">
+		<input type="submit" value="Blue">
+	</form>
+	<script>
+		function show()
+		{
+			event.preventDefault();
+			let action=document.activeElement.value;
+			if(action==="Red")
+				document.body.style.backgroundColor="red";
+			else if(action==="Green")
+				document.body.style.backgroundColor="green";
+			else
+				document.body.style.backgroundColor="blue";
+		}
+	</script>
+	</center>
+	</body>
+</html> 
